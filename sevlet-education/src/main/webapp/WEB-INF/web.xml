@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>sevlet-education</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>helloWorldServlet</servlet-name>
+		<!-- 要写完整的类名 (要注意大小写) -->
+		<servlet-class>edu.servlet.one.HelloWorldServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<!-- 两个name要一致。 -->
+		<servlet-name>helloWorldServlet</servlet-name>
+		<!-- 告诉容器，如何访问该Servlet。 -->
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	<servlet>
+    <servlet-name>ActionServlet</servlet-name>
+    <servlet-class>edu.servlet.two.servlet.web.ActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActionServlet</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CheckcodeServlet</servlet-name>
+    <servlet-class>edu.servlet.two.servlet.common.CheckcodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckcodeServlet</servlet-name>
+    <url-pattern>/checkcode</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddCookieServlet</servlet-name>
+    <servlet-class>edu.servlet.three.AddCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCookieServlet</servlet-name>
+    <url-pattern>/addCookie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FindOrAddCookieServlet</servlet-name>
+    <servlet-class>edu.servlet.three.FindOrAddCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindOrAddCookieServlet</servlet-name>
+    <url-pattern>/findOrAddCookie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FindCookieServlet</servlet-name>
+    <servlet-class>edu.servlet.three.FindCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindCookieServlet</servlet-name>
+    <url-pattern>/findCookie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CountServlet</servlet-name>
+    <servlet-class>edu.servlet.three.CountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CountServlet</servlet-name>
+    <url-pattern>/count</url-pattern>
+  </servlet-mapping>
+</web-app>
