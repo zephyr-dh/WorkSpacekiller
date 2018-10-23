@@ -1,0 +1,53 @@
+spring:
+  profiles:
+    active: development
+
+
+---
+spring:
+     profiles: development
+     thymeleaf:
+       cache: false
+       prefix: classpath:/templates/
+       suffix: .html
+       mode: html
+       encoding: UTF-8
+       servlet:
+         content-type: text/html
+
+#
+#     freemarker:
+#       allow-request-override: false
+#       cache: false
+#       check-template-location: true
+#       charset: utf-8
+#       content-type: text/html
+#       expose-request-attributes: false
+#       expose-session-attributes: false
+#       expose-spring-macro-helpers: false
+#       prefix:
+#       suffix: .ftl
+
+
+
+server:
+  port: 9030
+
+ds:
+  userName: root
+  password: tiger
+  url: jdbc:mysql://localhost:3306/test
+  driverClassName: com.mysql.jdbc.Driver
+
+# freemarker
+
+
+
+
+
+---
+spring:
+     profiles: production
+
+server:
+  port: 9003
