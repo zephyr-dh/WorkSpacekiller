@@ -6,27 +6,38 @@ spring:
 ---
 spring:
      profiles: development
-     thymeleaf:
-       cache: false
-       prefix: classpath:/templates/
-       suffix: .html
-       mode: html
-       encoding: UTF-8
-       servlet:
-         content-type: text/html
-
-#
-#     freemarker:
-#       allow-request-override: false
+#     thymeleaf:
 #       cache: false
-#       check-template-location: true
-#       charset: utf-8
-#       content-type: text/html
-#       expose-request-attributes: false
-#       expose-session-attributes: false
-#       expose-spring-macro-helpers: false
-#       prefix:
-#       suffix: .ftl
+#       prefix: classpath:/templates/
+#       suffix: .html
+#       mode: html
+#       encoding: UTF-8
+#       servlet:
+#         content-type: text/html
+#java mail
+     mail:
+       host: smtp.yeah.net
+       username: zephyrous@yeah.net
+       password: Sacrifice0727
+       properties:
+         mail:
+           smtp:
+             auth: true
+             starttls:
+               required: true
+               enable: true
+# freemarker
+     freemarker:
+       allow-request-override: false
+       cache: false
+       check-template-location: true
+       charset: utf-8
+       content-type: text/html
+       expose-request-attributes: false
+       expose-session-attributes: false
+       expose-spring-macro-helpers: false
+       prefix:
+       suffix: .ftl
 
 
 
