@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.ServletContext;
@@ -17,6 +18,7 @@ import java.util.EnumSet;
 import java.util.Map;
 
 @SpringBootApplication
+@EnableScheduling
 public class SpringBootNoobApplication implements ServletContextInitializer {
 
     public static void main(String[] args) {

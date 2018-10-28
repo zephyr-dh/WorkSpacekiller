@@ -38,6 +38,17 @@ spring:
        expose-spring-macro-helpers: false
        prefix:
        suffix: .ftl
+# jdbc datasource
+     datasource:
+       driver-class-name: com.mysql.jdbc.Driver
+       url: jdbc:mysql://db4free.net:3306/zephyrous
+       username: zephyrous
+       password: zephyrous
+# jpa 配置
+     jpa:
+       hibernate:
+         ddl-auto: update
+       show-sql: true
 
 
 
