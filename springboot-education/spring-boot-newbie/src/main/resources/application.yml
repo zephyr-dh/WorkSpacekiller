@@ -1,0 +1,53 @@
+# 定义激活的环境
+spring:
+  profiles:
+    active: development
+
+
+---
+# 定义配置文件的环境
+spring:
+  profiles: development
+  #数据库源
+  datasource:
+    data-username: com.mysql.jdbc.Driver
+    url: jdbc:mysql://db4free.net:3306/zephyrous
+    username: zephyrous
+    password: zephyrous
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid: d;
+
+
+
+# 配置启动端口
+server:
+  port: 9030
+
+# 配置自定义log配置文件
+logging:
+  config: classpath:logging-config.xml
+
+# 自定义的配置
+ds:
+  userName: root
+  password: tiger
+  url: jdbc:mysql://localhost:3306/test
+  driverClassName: com.mysql.jdbc.Driver
+# mybatis 配置
+#  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+---
+# 定义配置文件的环境
+spring:
+  profiles: production
+
+# 配置启动端口
+server:
+  port: 9300
+
+# 配置自定义log配置文件
+logging:
+  config: classpath:logging-config.xml
