@@ -1,5 +1,6 @@
 package io.oacy.education.newbie.springbootnewbie.configurations.mybatis;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -23,6 +24,7 @@ public class MyBatisConfiguration implements TransactionManagementConfigurer {
     @Override
     public PlatformTransactionManager annotationDrivenTransactionManager() {
         return new DataSourceTransactionManager(dataSource);
+
     }
 
     @Bean(name = "sqlSessionFactory")

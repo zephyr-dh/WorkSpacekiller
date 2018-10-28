@@ -10,14 +10,63 @@ spring:
   profiles: development
   #数据库源
   datasource:
-    data-username: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://db4free.net:3306/zephyrous
     username: zephyrous
     password: zephyrous
     type: com.alibaba.druid.pool.DruidDataSource
-    druid: d;
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: stat,wall,logback
+  # 缓存
+  cache:
+    # redis 配置文件
+    redis:
+      time-to-live: 60000s
+    # 缓存类型（ehcache、redis）
+    type: ehcache
+#    type: redis
+#     ehcache 配置文件
+    ehcache:
+      config: classpath:ehcache.xml
+  # redis
+  redis:
+    host: 192.168.1.28
+    port: 3306
+    password: 123
+  #mongoDB
+  data:
+    mongodb:
+      host: 192.168.1.28
+      port: 27010
+      database: test
+  # activemq 配置
+  activemq:
+    broker-url: tcp://192.168.1.28:61616
+    user: admin
+    password: admin
+    pool:
+      enabled: true
+      max-connections: 20
 
+#  在消息中间件中有 2 个重要的概念：消息代理和目的地。
+#  当消息发送者发送消息后，消息就被消息代理接管，消息代理保证消息传递到指定目的地。
+#  我们常用的消息代理有 JMS 和 AMQP 规范。对应地，它们常见的实现分别是 ActiveMQ 和 RabbitMQ。
 
+  #  使用发布/订阅模式时，下边配置需要设置成 true
+  jms:
+    pub-sub-domain: false
 
 # 配置启动端口
 server:
@@ -34,11 +83,11 @@ ds:
   url: jdbc:mysql://localhost:3306/test
   driverClassName: com.mysql.jdbc.Driver
 # mybatis 配置
-#  config-location: classpath:mybatis/mybatis-config.xml
-#  mapper-locations: classpath:mybatis/mapper/*.xml
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
+#  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapper/*.xml
 ---
 # 定义配置文件的环境
 spring:
