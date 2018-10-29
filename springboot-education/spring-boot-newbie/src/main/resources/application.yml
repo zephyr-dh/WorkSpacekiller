@@ -67,6 +67,13 @@ spring:
   #  使用发布/订阅模式时，下边配置需要设置成 true
   jms:
     pub-sub-domain: false
+  # rabbitmq
+  rabbitmq:
+    host: 192.168.1.28
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /test
 
 # 配置启动端口
 server:

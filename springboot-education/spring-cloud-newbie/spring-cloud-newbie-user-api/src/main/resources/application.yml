@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: spring-cloud-newbie-user-api
+
+eureka:
+  instance:
+#    instance-id: spring-cloud-newbie-user-api-8081
+    prefer-ip-address: true # 访问路径可以显示 IP
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/  # 注册中心访问地址
