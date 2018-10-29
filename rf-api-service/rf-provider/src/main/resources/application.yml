@@ -1,0 +1,129 @@
+---
+
+server:
+  port: 20100
+
+management:
+  security:
+    enabled: false
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: load, threadpool
+spring:
+  profiles: production
+  datasource:
+    hikari:
+      auto-commit: false
+      connection-test-query: SELECT 1 FROM DUAL
+      pool-name: rf-pool
+      driver-class-name: oracle.jdbc.OracleDriver
+      jdbc-url: jdbc:oracle:thin:@193.0.10.56:1521:sjsc
+      username: sj
+      password: sjjxc
+      maximum-pool-size: 20
+      minimum-idle: 10
+  redis:
+    host: prod2.sjes.sanjiang.info
+    database: 2
+  application:
+    name: rf-api-provider
+
+dubbo:
+  application:
+    id: rf-api-provider
+    consumer:
+      id: rf-api-consumer
+    name: rf-api-provider
+    qos-port: 22222
+    qos-enable: true
+    owner: fudongwei
+    organization: sanjiang-it
+    version: 1.0.0
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12302
+    server: netty4
+  registry:
+    id: rf-api-registry
+    address: zookeeper://193.0.10.145:2181
+  scan:
+    base-packages: com.sanjiang.provider.service
+  provider:
+    client: netty4
+
+
+
+logging:
+  level:
+    com:
+      sanjiang:
+        provider:
+          mapper: trace
+
+---
+
+server:
+  port: 20100
+
+management:
+  security:
+    enabled: false
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: load, threadpool
+spring:
+  profiles: dev
+  datasource:
+    hikari:
+      auto-commit: false
+      connection-test-query: SELECT 1 FROM DUAL
+      pool-name: rf-pool
+      driver-class-name: oracle.jdbc.OracleDriver
+      jdbc-url: jdbc:oracle:thin:@193.0.10.141:1521:sjsc
+      username: sj
+      password: sjjxc
+      maximum-pool-size: 20
+      minimum-idle: 10
+  redis:
+    host: srv3.sanjiang.info
+    database: 13
+  application:
+    name: rf-api-provider
+
+dubbo:
+  application:
+    id: rf-api-provider
+    consumer:
+      id: rf-api-consumer
+    name: rf-api-provider
+    qos-port: 22222
+    qos-enable: true
+    owner: fudongwei
+    organization: sanjiang-it
+    version: 1.0.0
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12302
+    server: netty4
+  registry:
+    id: rf-api-registry
+    address: zookeeper://193.0.10.129:2181
+  scan:
+    base-packages: com.sanjiang.provider.service
+  provider:
+    client: netty4
+
+
+
+logging:
+  level:
+    com:
+      sanjiang:
+        provider:
+          mapper: trace

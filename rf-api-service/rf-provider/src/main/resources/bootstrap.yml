@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      profile: dev
+
+---
+spring:
+  profiles: production
+  cloud:
+    config:
+      profile: production

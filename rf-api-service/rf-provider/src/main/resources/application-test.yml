@@ -1,0 +1,6 @@
+server:
+  port: 20106
+
+dubbo:
+  protocol:
+    port: -1

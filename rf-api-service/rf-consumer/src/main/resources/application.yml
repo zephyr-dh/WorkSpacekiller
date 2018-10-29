@@ -1,0 +1,107 @@
+---
+server.port: 20110
+
+spring:
+  profiles: dev
+  application:
+    name: rf-api-consumer
+  zipkin:
+    base-url: http://srv5.sanjiang.info:30000
+  sleuth:
+    sampler:
+      percentage: 1.0
+  redis:
+    host: srv3.sanjiang.info
+    database: 14
+dubbo:
+  application:
+    id: rf-api-consumer
+    name: rf-api-consumer
+    qos-port: 22223
+    qos-enable: true
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12302
+    server: netty4
+  consumer:
+    client: netty4
+  registry:
+    id: rf-api-registry
+    address: zookeeper://193.0.10.129:2181
+endpoints:
+  dubbo:
+    enabled: true
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+  security:
+    enabled: false
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    status-page-url: http://srv5.sanjiang.info:30000/swagger-ui.html
+  client:
+    serviceUrl:
+      defaultZone: http://srv3.sanjiang.info:8761/eureka/
+
+---
+
+
+server.port: 20110
+
+spring:
+  profiles: production
+  application:
+    name: rf-api-consumer
+  zipkin:
+    base-url: http://193.0.10.145:30000
+  sleuth:
+    sampler:
+      percentage: 1.0
+  redis:
+    host: prod2.sjes.sanjiang.info
+    database: 4
+dubbo:
+  application:
+    id: rf-api-consumer
+    name: rf-api-consumer
+    qos-port: 22223
+    qos-enable: true
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12302
+    server: netty4
+  consumer:
+    client: netty4
+  registry:
+    id: rf-api-registry
+    address: zookeeper://193.0.10.145:2181
+endpoints:
+  dubbo:
+    enabled: true
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+  security:
+    enabled: false
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    status-page-url: http://193.0.10.145:30000/swagger-ui.html
+  client:
+    serviceUrl:
+      defaultZone: http://srv3.sanjiang.info:8761/eureka/
+
+
+
+
+
+
