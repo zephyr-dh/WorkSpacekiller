@@ -1,0 +1,42 @@
+server:
+  port: 8769
+spring:
+  application:
+    name: service-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  host:
+    socket-timeout-millis: 11000
+    connect-timeout-millis: 60000
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: client1
+    api-b:
+      path: /api-b/**
+      serviceId: client2
+    test:
+      path: /tt/**
+      url: http://localhost:8763/
+
+ribbon:
+  ReadTimeout: 5000
+  SocketTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 12000
+
+
+
+
