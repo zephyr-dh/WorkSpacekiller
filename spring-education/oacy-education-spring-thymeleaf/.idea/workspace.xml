@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59f990a4-19ef-4361-b969-9296024025e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContxt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/java/io/oacy/education/house/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/java/io/oacy/education/house/configuration/DataSourceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/java/io/oacy/education/house/configuration/DruidConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/java/io/oacy/education/house/configuration/JpaConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/java/io/oacy/education/house/configuration/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/java/io/oacy/education/house/controller/HomePageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/java/io/oacy/education/house/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/java/io/oacy/education/house/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/test/java/io/oacy/education/house/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/test/java/io/oacy/education/house/repository/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/test/resources/db/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot-education/oacy-project-house/src/test/resources/db/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaProjects/anxian-gateway-admin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaProjects/anxian-gateway-admin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaProjects/anxian-gateway-app" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaProjects/anxian-gateway-app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaProjects/configs" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaProjects/configs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaProjects/invoice" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaProjects/invoice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaProjects/jpa/JPA" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaProjects/jpa/JPA" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2023572708">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="9" />
+          <entry key="iml" value="1" />
+          <entry key="md" value="2" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="9" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Markdown" value="2" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="md" value="10" />
+          <entry key="xml" value="73" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="10" />
+          <entry key="XML" value="73" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="121" column="20" lean-forward="true" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContxt.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1323">
+              <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="27">
+                <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="F:/B2C/sjes-b2c-admin" value="1472871720476" />
+        <entry key="F:/B2C/sjes-b2c-user" value="1472537483320" />
+        <entry key="F:/B2CBEIFEN/sjes-b2c-admin" value="1472522442711" />
+        <entry key="F:/JavaProjects/B2C/sjes-b2c-order" value="1489470746718" />
+        <entry key="F:/JavaProjects/sj-baidu-admin" value="1490586273430" />
+        <entry key="F:/JavaProjects/sj_baidu_admin/sj-baidu-admin" value="1490579568421" />
+        <entry key="F:/demo/sjes-b2c-site-master-7818a150b157e88fea038b7aa95f49258edc9667" value="1470366210000" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="E:/projects/sjes-group/sj-baidu-admin" value="PREVIEW" />
+        <entry key="F:/cs/sj-baidu-admin" value="PREVIEW" />
+        <entry key="F:/henry/projects/sj-baidu-admin" value="PREVIEW" />
+        <entry key="F:/henry/projects/sj-hub" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/README.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContxt.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="oacy-education-spring-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oacy-education-spring-thymeleaf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oacy-education-spring-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oacy-education-spring-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oacy-education-spring-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oacy-education-spring-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oacy-education-spring-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oacy-education-spring-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oacy-education-spring-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oacy-education-spring-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oacy-education-spring-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oacy-education-spring-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oacy-education-spring-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541410587005" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="F:/Nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WorkSpacekiller\spring-education\oacy-education-spring-thymeleaf\src\main\webapp" />
+      <recent name="E:\WorkSpacekiller\spring-education\oacy-education-spring-thymeleaf\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59f990a4-19ef-4361-b969-9296024025e5" name="Default Changelist" comment="" />
+      <created>1541406244490</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541406244490</updated>
+      <workItem from="1541406249011" duration="4455000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4455000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Web" side_tool="true" />
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1977612" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32867134" />
+      <window_info anchor="bottom" id="Java Enterprise" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.5286713" />
+      <window_info anchor="bottom" id="Spring" order="3" weight="0.32867134" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50716335" side_tool="true" weight="0.26993006" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32867134" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49713466" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.2951049" />
+      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49283668" weight="0.32447553" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32867134" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.3295129" />
+      <window_info anchor="right" id="Database" order="1" weight="0.3295129" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" x="92" y="92" width="1256" height="676" id="Documentation" order="4" type="FLOATING" />
+      <window_info anchor="right" id="Bean Validation" order="5" weight="0.3295129" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/oacy-education-spring-thymeleaf.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="27">
+            <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf-spring4/3.0.0.RELEASE/thymeleaf-spring4-3.0.0.RELEASE.jar!/org/thymeleaf/spring4/templateresolver/SpringResourceTemplateResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.7.RELEASE/thymeleaf-3.0.7.RELEASE.jar!/org/thymeleaf/templateresolver/ITemplateResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.7.RELEASE/thymeleaf-3.0.7.RELEASE.jar!/org/thymeleaf/templateresolver/AbstractTemplateResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.7.RELEASE/thymeleaf-3.0.7.RELEASE.jar!/org/thymeleaf/templateresolver/AbstractConfigurableTemplateResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="23" column="76" lean-forward="true" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.7.RELEASE/thymeleaf-3.0.7.RELEASE.jar!/org/thymeleaf/templateresolver/ServletContextTemplateResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContxt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="121" column="20" lean-forward="true" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
