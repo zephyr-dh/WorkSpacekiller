@@ -35,6 +35,9 @@ spring:
   devtools:
     restart:
       exclude: templates/**,static/**
+  http:
+    multipart:
+      enabled: true
 
 # 打印JPA的sql
 logging:
@@ -52,6 +55,13 @@ server:
   error:
     whitelabel:
       enabled: false
+
+# qiniu 注意替换成自己申请的配置
+qiniu:
+  AccessKey: Pwu14QfE7Dg0nHgpMtmYH2wVdlTKdb_fQPRf2vJD
+  SecretKey: 6LyvDuem_e6hs7sfOXX1BSxL0LZksYYUHRZIv2GN
+  Bucket: picture
+  prefix: http://ozeuaafj0.bkt.clouddn.com/
 
 ---
 spring:

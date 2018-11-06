@@ -1,10 +1,8 @@
 package io.oacy.education.xunwu.web.controller;
 
-import io.oacy.education.xunwu.base.Response;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomePageController {

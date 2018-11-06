@@ -1,4 +1,4 @@
-package io.oacy.education.xunwu.configuration;
+package io.oacy.education.xunwu.web.controller;
 
 import io.oacy.education.xunwu.base.Response;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class AppErrorController implements ErrorController {
 
     @Override
     public String getErrorPath() {
-        return ERROR_PATH;
+        return this.ERROR_PATH;
     }
 
     @Autowired
