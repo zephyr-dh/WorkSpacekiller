@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 @Service
-public class QiNiuServiceImpl implements QiniuService, InitializingBean {
+public class QiniuServiceImpl implements QiniuService, InitializingBean {
     @Autowired
     private UploadManager uploadManager;
 
