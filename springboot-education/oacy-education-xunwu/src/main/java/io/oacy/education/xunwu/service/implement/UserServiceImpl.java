@@ -1,4 +1,4 @@
-package io.oacy.education.xunwu.service.user;
+package io.oacy.education.xunwu.service.implement;
 
 import io.oacy.education.xunwu.domain.Role;
 import io.oacy.education.xunwu.domain.User;

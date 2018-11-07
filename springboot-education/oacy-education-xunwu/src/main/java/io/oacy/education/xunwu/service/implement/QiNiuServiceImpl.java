@@ -1,4 +1,4 @@
-package io.oacy.education.xunwu.service.qiniu;
+package io.oacy.education.xunwu.service.implement;
 
 import com.qiniu.common.QiniuException;
 import com.qiniu.http.Response;
@@ -46,27 +46,27 @@ public class QiNiuServiceImpl implements QiniuService, InitializingBean {
 
     @Override
     public Response uploadFile(InputStream inputStream) throws QiniuException {
-        Response response = this.uploadManager.put(inputStream, null, getUploadToken(), null, null);
-        int retry = 0;
-        while (response.needRetry() && retry < 3) {
-            response = this.uploadManager.put(inputStream, null, getUploadToken(), null, null);
-            retry++;
+        AtomicReference<Response> response = new AtomicReference<>(this.uploadManager.put(inputStream, null, getUploadToken(), null, null));
+        AtomicInteger retry = new AtomicInteger();
+        while (response.get().needRetry() && retry.get() < 3) {
+            response.set(this.uploadManager.put(inputStream, null, getUploadToken(), null, null));
+            retry.getAndIncrement();
         }
-        return response;
+        return response.get();
     }
 
     @Override
     public Response delete(String key) throws QiniuException {
-        Response response = bucketManager.delete(this.bucket, key);
-        int retry = 0;
-        while (response.needRetry() && retry++ < 3) {
-            response = bucketManager.delete(bucket, key);
+        AtomicReference<Response> response = new AtomicReference<>(bucketManager.delete(this.bucket, key));
+        AtomicInteger retry = new AtomicInteger();
+        while (response.get().needRetry() && retry.getAndIncrement() < 3) {
+            response.set(bucketManager.delete(bucket, key));
         }
-        return response;
+        return response.get();
     }
 
     @Override
-    public void afterPropertiesSet() throws Exception {
+    public void afterPropertiesSet() {
         this.putPolicy = new StringMap();
         putPolicy.put("returnBody", "{\"key\":\"$(key)\",\"hash\":\"$(etag)\",\"bucket\":\"$(bucket)\",\"width\":$(imageInfo.width), \"height\":${imageInfo.height}}");
     }

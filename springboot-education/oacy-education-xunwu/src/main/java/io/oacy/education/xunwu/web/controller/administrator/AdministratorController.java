@@ -1,9 +1,10 @@
 package io.oacy.education.xunwu.web.controller.administrator;
 
+import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
 import io.oacy.education.xunwu.base.Response;
 import io.oacy.education.xunwu.service.QiniuService;
-import io.swagger.annotations.ApiResponse;
+import io.oacy.education.xunwu.web.dto.QiniuPutRet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,9 @@ public class AdministratorController {
 
     @Autowired
     private QiniuService qiNiuService;
+
+    @Autowired
+    private Gson gson;
 
 
     /**
@@ -93,18 +97,18 @@ public class AdministratorController {
             InputStream inputStream = file.getInputStream();
             com.qiniu.http.Response response = qiNiuService.uploadFile(inputStream);
             if (response.isOK()) {
-                QiniuPutRet ret = gson.fromJson(response.bodyString(), QiNiuPutRet.class);
+                QiniuPutRet ret = gson.fromJson(response.bodyString(), QiniuPutRet.class);
                 return Response.ofSuccess(ret);
             } else {
                 return Response.ofMessage(response.statusCode, response.getInfo());
             }
 
         } catch (QiniuException e) {
-            Response response = e.response;
+            com.qiniu.http.Response  response = e.response;
             try {
                 return Response.ofMessage(response.statusCode, response.bodyString());
-            } catch (QiniuException e1) {
-                e1.printStackTrace();
+            } catch (QiniuException ee) {
+                ee.printStackTrace();
                 return Response.ofStatus(Response.Status.INTERNAL_SERVER_ERROR);
             }
         } catch (IOException e) {

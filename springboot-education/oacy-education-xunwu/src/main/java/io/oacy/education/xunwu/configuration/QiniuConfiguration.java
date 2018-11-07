@@ -22,7 +22,7 @@ public class QiniuConfiguration {
      */
     @Bean
     public com.qiniu.storage.Configuration qiniuConfig() {
-        return new com.qiniu.storage.Configuration(Zone.zone0());
+        return new com.qiniu.storage.Configuration(Zone.zone2());
     }
 
     /**
@@ -50,12 +50,5 @@ public class QiniuConfiguration {
         return new BucketManager(auth(), qiniuConfig());
     }
 
-    /**
-     * Json解析工具
-     * @return
-     */
-    @Bean
-    public Gson gson() {
-        return new Gson();
-    }
+
 }
