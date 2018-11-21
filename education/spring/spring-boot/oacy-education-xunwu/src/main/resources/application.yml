@@ -1,0 +1,89 @@
+spring:
+  profiles:
+    active: development
+
+  # JPA设置
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    #       create 启动时删数据库中的表，然后创建，退出时不删除数据表
+    #       create-drop 启动时删数据库中的表，然后创建，退出时删除数据表 如果表不存在报错
+    #       update 如果启动时表格式不一致则更新表，原有数据保留
+    #       validate 项目启动表结构进行校验 如果不一致则报错
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+  # spring session 会话存储类型
+  session:
+    store-type: none
+
+  redis:
+    host: 192.168.1.28
+    database: 0
+    port: 6379
+    #  v2 使用了新的连接池
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms
+        min-idle: 0
+  thymeleaf:
+    mode: HTML
+    suffix: .html
+    prefix: classpath:/templates/
+  devtools:
+    restart:
+      exclude: templates/**,static/**
+  http:
+    multipart:
+      enabled: true
+
+# 打印JPA的sql
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+
+# 关闭HTTP基本验证
+security:
+  basic:
+    enabled: false
+#错误页面
+server:
+  error:
+    whitelabel:
+      enabled: false
+
+# qiniu 注意替换成自己申请的配置
+qiniu:
+  AccessKey: Pwu14QfE7Dg0nHgpMtmYH2wVdlTKdb_fQPRf2vJD
+  SecretKey: 6LyvDuem_e6hs7sfOXX1BSxL0LZksYYUHRZIv2GN
+  Bucket: picture
+  prefix: http://ozeuaafj0.bkt.clouddn.com/
+
+---
+spring:
+  profiles: development
+
+  #开发环境的数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.28:6033/xunwu?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: dh1990
+  thymeleaf:
+    cache: false
+
+---
+spring:
+  profiles: test
+
+  #测试环境H2数据库
+  datasource:
+    driver-class-name: org.h2.Driver
+    # 内存模式
+    url: jdbc:h2:mem:test
+    schema: classpath:/db/schema.sql
+    data: classpath:/db/schema.sql
